@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from . import views
+from django.urls import reverse
 
 # Create your views here.
 
 def starting_page(request):
-    pass
+    return render(request, "blog/index.html")
 
 def posts(request):
     pass
